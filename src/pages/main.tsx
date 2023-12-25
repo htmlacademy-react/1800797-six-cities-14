@@ -95,7 +95,7 @@ export default function Main(props) {
               </form>
               <div className="cities__places-list places__list tabs__content">
 
-                {props.places.map((place) => <Card place={place}/>)}
+                {props.places.map((place) => <Card place={place} key={place.id}/>)}
 
               </div>
             </section>
